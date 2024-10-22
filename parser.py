@@ -1,9 +1,9 @@
 import argparse
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Run DCCF.")
+    parser = argparse.ArgumentParser(description="Run AMGCR.")
     parser.add_argument('--data_path', nargs='?', default='data/', help='Input data path.')
-    parser.add_argument('--seed', type=int, default=2022, help='random seed')
+    parser.add_argument('--seed', type=int, default=2024, help='random seed')
     parser.add_argument('--dataset', nargs='?', default='gowalla', help='Choose a dataset from {gowalla, amazon, tmall}')
     parser.add_argument('--batch_size', type=int, default=4096, help='batch size')
     parser.add_argument('--lr', type=float, default=0.001, help='Learning rate.')
